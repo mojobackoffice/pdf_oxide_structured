@@ -1,0 +1,21 @@
+[package]
+name = "pdf_oxide_structured"
+version = "0.1.0"
+edition = "2021"
+authors = ["mojoTools Team"]
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+magnus = "0.8"
+pdf_oxide = { git = "https://github.com/yfedoseev/pdf_oxide", branch = "main", default-features = false, features = ["ocr"] }
+# pdf_oxide main still builds DocumentIR { metadata, sections }.
+# office_oxide 0.1.12 added `defined_names` and no longer matches that call.
+office_oxide = { version = "=0.1.11", default-features = false }
+ort = { version = "=2.0.0-rc.13", features = ["download-binaries", "tls-native-vendored"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+anyhow = "1"
+dirs = "5"

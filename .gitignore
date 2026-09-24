@@ -1,0 +1,9 @@
+/target/
+/tmp/
+*.bundle
+/pkg/
+/lib/pdf_oxide_structured/*.so
+/lib/pdf_oxide_structured/*.bundle
+/lib/pdf_oxide_structured/*.dll
+/Makefile
+/mkmf.log
