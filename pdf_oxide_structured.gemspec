@@ -6,8 +6,8 @@ Gem::Specification.new do |spec|
   spec.name = "pdf_oxide_structured"
   spec.version = PdfOxideStructured::VERSION
   spec.authors = ["MojoTools Team"]
-  spec.summary = "Structured text spans from a PDF path or buffer"
-  spec.description = "Rust extension that extracts pdf-extract text spans from a path, Pathname, or IO."
+  spec.summary = "Structured text spans and words from a PDF path or buffer"
+  spec.description = "Rust extension that extracts pdf-extract text spans and words from a path, Pathname, or IO."
   spec.homepage = "https://github.com/mojobackoffice/mojo_tools"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.2"
